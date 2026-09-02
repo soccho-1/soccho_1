@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10152f">
+  <meta name="description" content="স্বচ্ছ - Personal Profile">
+  <title>স্বচ্ছ | Personal Profile</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#fff;background:#080b1c;min-height:100vh;overflow-x:hidden}
+    body:before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(circle at 15% 15%,#6c35ff55,transparent 35%),radial-gradient(circle at 85% 25%,#00d9ff44,transparent 32%),radial-gradient(circle at 55% 90%,#ff3cac33,transparent 35%),linear-gradient(135deg,#080b1c,#111735 55%,#090b18)}
+    body:after{content:"";position:fixed;width:420px;height:420px;border-radius:50%;right:-180px;top:-180px;background:#8b5cf633;filter:blur(70px);z-index:-1}
+    .wrap{width:min(1100px,92%);margin:auto}
+    nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0}
+    .brand{font-size:1.25rem;font-weight:800;letter-spacing:.5px}
+    .lang{border:1px solid #ffffff2b;background:#ffffff12;color:#fff;border-radius:999px;padding:9px 15px;cursor:pointer;backdrop-filter:blur(12px)}
+    .hero{min-height:78vh;display:grid;place-items:center;text-align:center;padding:45px 0 65px}
+    .avatar{width:125px;height:125px;border-radius:50%;object-fit:cover;border:4px solid #ffffff44;box-shadow:0 0 45px #7c3aed66;margin-bottom:22px}
+    h1{font-size:clamp(2.4rem,7vw,5rem);line-height:1;margin-bottom:14px}
+    .gradient-text{background:linear-gradient(90deg,#a78bfa,#67e8f9,#f9a8d4);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .subtitle{color:#cbd5e1;max-width:650px;margin:0 auto 28px;font-size:1.05rem;line-height:1.8}
+    .buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+    .btn{display:inline-block;text-decoration:none;color:#fff;padding:12px 19px;border-radius:14px;border:1px solid #ffffff20;background:#ffffff12;backdrop-filter:blur(14px);transition:.2s}
+    .btn.primary{background:linear-gradient(90deg,#7c3aed,#0891b2);border:0}
+    .btn:hover{transform:translateY(-2px)}
+    section{padding:30px 0 80px}
+    .section-title{text-align:center;font-size:2rem;margin-bottom:28px}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    .card{padding:24px;border:1px solid #ffffff18;background:#ffffff0d;border-radius:24px;backdrop-filter:blur(18px);box-shadow:0 15px 50px #00000022}
+    .card h3{margin-bottom:8px}.card p{color:#cbd5e1;line-height:1.7}
+    .socials{display:grid;gap:12px;margin-top:15px}
+    .social{display:flex;align-items:center;justify-content:space-between;gap:15px;text-decoration:none;color:#fff;padding:15px 16px;border-radius:16px;background:#ffffff0a;border:1px solid #ffffff12}
+    .social span{color:#cbd5e1;font-size:.9rem}
+    footer{text-align:center;color:#94a3b8;padding:25px 0 35px;border-top:1px solid #ffffff12}
+    .bn,.en{display:none}.bn.active,.en.active{display:inline}
+    @media(max-width:700px){.grid{grid-template-columns:1fr}.hero{min-height:75vh;padding-top:25px}.card{padding:20px}.subtitle{font-size:.98rem}nav{padding:16px 0}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <div class="brand">Sᴏᴄᴄʜᴏ</div>
+      <button class="lang" onclick="toggleLang()">বাংলা / English</button>
+    </nav>
+
+    <main>
+      <section class="hero">
+        <div>
+          <img class="avatar" src="https://avatars.githubusercontent.com/u/323736237?v=4" alt="স্বচ্ছ">
+          <h1><span class="bn active">হ্যালো, আমি <span class="gradient-text">স্বচ্ছ</span></span><span class="en">Hello, I'm <span class="gradient-text">Soccho</span></span></h1>
+          <p class="subtitle">
+            <span class="bn active">আমার ব্যক্তিগত তথ্য ও সোশ্যাল মিডিয়ার সব গুরুত্বপূর্ণ লিংক এক জায়গায়।</span>
+            <span class="en">My personal information and important social media links — all in one place.</span>
+          </p>
+          <div class="buttons">
+            <a class="btn primary" href="mailto:arafat16641172@gmail.com">✉ Gmail</a>
+            <a class="btn" href="ayatul-kursi.html">☪ <span class="bn active">আয়াতুল কুরসি</span><span class="en">Ayatul Kursi</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title"><span class="bn active">আমার সম্পর্কে</span><span class="en">About Me</span></h2>
+        <div class="grid">
+          <div class="card">
+            <h3>👤 <span class="bn active">ব্যক্তিগত প্রোফাইল</span><span class="en">Personal Profile</span></h3>
+            <p><span class="bn active">নাম: স্বচ্ছ<br>অনলাইন নাম: Soccho</span><span class="en">Name: Soccho<br>Online name: Soccho</span></p>
+          </div>
+          <div class="card">
+            <h3>📧 <span class="bn active">ইমেইল</span><span class="en">Email</span></h3>
+            <p><a href="mailto:arafat16641172@gmail.com" style="color:#67e8f9;text-decoration:none">arafat16641172@gmail.com</a></p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title"><span class="bn active">সোশ্যাল মিডিয়া</span><span class="en">Social Media</span></h2>
+        <div class="card">
+          <div class="socials">
+            <a class="social" href="https://www.facebook.com/share/1bDMxyHDYz/" target="_blank" rel="noopener"><b>Facebook 01</b><span>Open ↗</span></a>
+            <a class="social" href="https://www.facebook.com/share/1JMTCkuJdA/" target="_blank" rel="noopener"><b>Facebook 02</b><span>Open ↗</span></a>
+            <a class="social" href="https://www.instagram.com/soccho_?igsi=MjdscXVhMDIyNWQ1" target="_blank" rel="noopener"><b>Instagram @soccho_</b><span>Open ↗</span></a>
+            <a class="social" href="https://www.instagram.com/soccho_1?igsi=MTI1eGhjY2dsZThwNQ==" target="_blank" rel="noopener"><b>Instagram @soccho_1</b><span>Open ↗</span></a>
+            <a class="social" href="https://www.tiktok.com/@soccho_1?_r=1&_t=ZS-99NUUM02JP8" target="_blank" rel="noopener"><b>TikTok @soccho_1</b><span>Open ↗</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>© <span id="year"></span> Soccho • Personal Website</footer>
+  </div>
+
+  <script>
+    let english=false;
+    function toggleLang(){
+      english=!english;
+      document.querySelectorAll('.bn').forEach(x=>x.classList.toggle('active',!english));
+      document.querySelectorAll('.en').forEach(x=>x.classList.toggle('active',english));
+      document.documentElement.lang=english?'en':'bn';
+    }
+    document.getElementById('year').textContent=new Date().getFullYear();
+  </script>
+</body>
+</html>
